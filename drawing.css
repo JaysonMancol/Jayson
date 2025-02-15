@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+/* Container for the sketch effect */
+.sketch-container {
+    position: relative;
+    height: 90%;
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    background: url('basts.jpg') no-repeat center center;
+    background-size: cover;
+    justify-content: flex-start;
+    border: 10px solid #000000; /* Optional, for visual effect */
+    box-shadow: 0 4px 8px rgba(68, 68, 68, 0.2);
+
+    
+}
+
+/* Styling the <p> element */
+.sketch-container p {
+    position: relative;
+    color: #373737;
+    font-size: 10px;
+    line-height: 1;
+    text-align: center;
+    z-index: 1; /* Ensures text appears on top of background */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Optional fun font */
+    width: 100%;
+    word-wrap: break-word;
+    margin-bottom: auto;
+    
+}
+
+/* Optional: Adding a semi-transparent overlay effect on the background */
+.sketch-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Ensures overlay is below text */
+    background: rgba(94, 94, 94, 0.6);
+
+ }
+
+ a{
+    position: absolute;
+    bottom: -10%;
+    padding: 20px 50px;
+    background-color: #525252;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+ }
+
+ a:hover{
+    background-color: #2b2b2b;
+ }
+
+
+     
